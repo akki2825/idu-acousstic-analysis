@@ -1,0 +1,25 @@
+#+TITLE: idu-acoustic-analysis
+
+Acoustic analysis of Idu Mishmi.
+
+* Installation
+
+*** Poetry
+#+begin_src shell
+curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python -
+
+#+end_src
+
+
+*** Python packages
+#+begin_src shell
+poetry install
+#+end_src
+
+* Running
+
+Replacing labels to ARPABET in textgrids.
+
+#+begin_src shell
+poetry run python scripts/replace.py -h
+#+end_src
